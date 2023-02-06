@@ -1,6 +1,6 @@
 // Name : Harsh Patel
 // Student ID : 100849927
-// 
+// Date : 05 - Feb -2023
 console.log("JS script wired up");
 
 // this function displayes user information in console and redirect to the home page when click on submit button.
