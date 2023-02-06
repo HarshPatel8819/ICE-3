@@ -1,0 +1,22 @@
+body{
+    background: url("../images/backgroundImage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.style{
+    
+    width:470px;
+    padding-left:60px;
+    margin:0 0 10px 25px;
+    font-size:12px;
+    display:inline-block;
+}
+.style_image{
+
+    width: 140px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    float: right;
+}

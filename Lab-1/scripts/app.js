@@ -1,4 +1,9 @@
+// Name : Harsh Patel
+// Student ID : 100849927
+// 
 console.log("JS script wired up");
+
+// this function displayes user information in console and redirect to the home page when click on submit button.
 
 function timedRedirect(e) {
     let contactFullName = document.getElementById('InputFullName').value;
@@ -16,3 +21,7 @@ let submitButton = document.getElementById('submit-button');
 if (submitButton) {
     submitButton.addEventListener('click', timedRedirect, false);
 }
+
+
+let products = document.getElementById('products');
+products.innerHTML = "Interests";
