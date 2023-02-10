@@ -45,8 +45,7 @@ h2 {
   flex-wrap: nowrap;
 }
 
-.asp-img
-{
+.asp-img {
   max-height: 200px;
 }
 
@@ -121,6 +120,7 @@ input[type="submit"]:hover {
 }
 
 
+#btnDivToggle,
 #btnRegReset,
 #btnRegSubmit {
   border-radius: 10px;
