@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+		<link rel="stylesheet" href="./style/style.css" />
+		<link
+			rel="stylesheet"
+			href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+		/>
+	</head>
+	<body>
+    <header>
+		<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+			<div class="container-fluid">
+				<span class="navbar-text">WEBD6201 Lab-2</span>
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="product.html" id="products">Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="services.html">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="register.html">Register</a>
+						</li>	
+					</ul>
+			</div>
+		</nav>
+
+
+              <h2 class="text-uppercase text-center mb-5">Register</h2>
+              <p class="fw-bold text-dark">Create your own account. It may take few minutes to complete.</p>
+              <form>
+
+                <div class="form-outline mb-2">
+                  <input type="text" 
+                         id="form3Example1cg" 
+                         class="form-control form-control-lg"
+                         minlength="3"
+                         placeholder="Enter your Full Name" />
+                  <label class="form-label fw-bold text-dark" for="form3Example1cg">Your Name</label>
+                  <div class="errorMessage"></div>
+                </div>
+
+                <div class="form-outline mb-2">
+                  <input type="text" 
+                         id="form3Example13cg" 
+                         class="form-control form-control-lg"
+                         minlength="8"
+                         placeholder="Enter your Email Address" />
+                  <label class="form-label fw-bold text-dark" for="form3Example3cg">Your Email</label>
+                </div>
+
+                <div class="form-outline mb-2">
+                    <input type="password" 
+                           id="form3Example14cg" 
+                           class="form-control form-control-lg"
+                           minlength="6"
+                           placeholder="Enter your Password" />
+                  <label class="form-label fw-bold text-dark" for="form3Example4cg">Password</label>
+                </div>
+
+                <div class="form-outline mb-2">
+                  <input type="password" 
+                         id="form3Example4cdg" 
+                         class="form-control form-control-lg"
+                         minlength="6"
+                         placeholder="Conform your Password" />
+                  <label class="form-label fw-bold text-dark" for="form3Example4cdg">Repeat your password</label>
+                  
+                </div>
+
+                <div class="form-outline mb-2">
+                    <button type="button"
+                            id = "submit-register"
+                            class = "btn btn-outline-light btn-lg px-5">Register</button>
+                  </div>
+              </form>    
+                <p class="text-center fw-bold text-dark">Already have an account? <a href="login.html"
+                    class="fw-bold text-dark text-dark"><u>Sign in</u></a></p>
+
+
+</header>
+
+<div id="errorMessage" class="error-msg" styles="display:none">
+
+</div>
+<script src="./scripts/app.js"></script>
+<script src="./scripts/login.js"></script>
+<script src="./scripts/registration.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

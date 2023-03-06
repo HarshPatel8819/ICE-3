@@ -1,0 +1,6 @@
+{
+    "git.branchRandomName.enable": false,
+    "git.enableSmartCommit": false,
+    "git.enabled": true,
+    "git.followTagsWhenSync": false
+}

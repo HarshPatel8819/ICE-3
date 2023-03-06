@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+		<link rel="stylesheet" href="./style/style.css" />
+		<link
+			rel="stylesheet"
+			href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+			<div class="container-fluid">
+				<span class="navbar-text">WEBD6201 Lab-2</span>
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="product.html" id="products">Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="services.html">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="register.html">Register</a>
+						</li>	
+					</ul>
+			</div>
+		</nav>
+
+		
+		  
+						<h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                        <form name="loginwindow" method="post"></form>
+						<p class="text-dark-50 mb-5 fw-bold text-dark ">Please enter your login and password!</p>
+		  
+						<div class="form-outline form-white mb-4">
+						  <input type="text" 
+                                 id="typeEmailX" 
+                                 class="form-control form-control-lg" 
+                                 aria-describedby="emailHelp"
+					             placeholder="Username"/>
+						  <label class="form-label fw-bold text-dark" for="typeEmailX">Email</label>
+						</div>
+		  
+						<div class="form-outline form-white mb-4">
+						  <input type="password" 
+                                 id="typePasswordX" 
+                                 class="form-control form-control-lg" 
+                                 aria-describedby="emailHelp"
+					             placeholder="Enter Password"/>
+						  <label class="form-label fw-bold text-dark" for="typePasswordX">Password</label>
+						</div>
+                        <button class="btn btn-outline-light btn-lg px-5" 
+                                onclick="openLogin(loginwindow)" type="submit">Login</button>
+                        <p class="text-center fw-bold text-dark">
+                            Don't have an account? 
+                            <a href="register.html">Register Here!</a>
+                        </p>
+						<script src="./scripts/app.js"></script>
+						<script src="./scripts/login.js"></script>
+						<script src="./scripts/registration.js"></script>
+						<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+						<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
