@@ -7,14 +7,14 @@ const makeposts =() => {
         let card = $('<div class="card blog"></div>')
             .attr('id','card-' +id_no)
             .appendTo($('.blog-column'));
-        let body = $('<div class=card blog"></div>')
+        let body = $('<div class=card-body blog"></div>')
             .attr('id','card-body-' +id_no)
             .appendTo(card);
         let title = $('<h5 class = "card-title blog"></h5>')
             .attr('id','card-title-' +id_no)
             .appendTo(body); 
         let pic = $('<img>')
-            .attr('id', 'ing-' + id_no)
+            .attr('id', 'img-' + id_no)
             .addClass('blog-pic')
             .css('max-height', '100px')
             .appendTo(body);
@@ -26,9 +26,11 @@ const makeposts =() => {
             .appendTo(body);
         let post_id = $('<span></span>')
             .attr('id', 'post-' + id_no)
+            .text('Post #: ' + id_no)
             .appendTo(sub);
         let user_id = $('<span></span>')
             .attr('id', 'user-' +id_no)
+            .text('\tUser #: ' + id_no)
             .appendTo(sub);
 
     }
@@ -37,7 +39,7 @@ const makeposts =() => {
 
 
 const getPics = () => {
-    PIXABAY_KEY = '1790748-28e813b4f8e4a2f6bbed13e8a';
+    PIXABAY_KEY = '34308179-2d9d4221827e0220f31213638';
     PIXABAY_URL =
         'https://pixabay.com/api/?key=<KEY>&q=dramatic+landscape&image_type=photo&per_ page=30';
     const url = PIXABAY_URL.replace('<KEY>', PIXABAY_KEY);
